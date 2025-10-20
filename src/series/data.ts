@@ -63,7 +63,7 @@ export const series = [
     2,
     "Una miniserie británica de comedia-drama basada en hechos reales, en tres partes, basada en el libro del mismo nombre de John Preston.",
     "https://www.imdb.com/es/title/tt6938856/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_a%2520very%2520english",
-    "src/series/A_Very_English_Scandal.png"
+    "assets/images/A_Very_English_Scandal.png"
   ),
 
   new Serie(

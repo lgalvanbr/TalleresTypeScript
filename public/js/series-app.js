@@ -82,7 +82,7 @@ const seriesData = [
         2,
         "Una historia en tres partes del histórico escándalo político del Partido Liberal de los años 60 y 70",
         "https://www.imdb.com/es/title/tt6938856/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_a%2520very%2520english",
-        "src/series/A_Very_English_Scandal.png"
+        "assets/images/A_Very_English_Scandal.png"
     ),
     new Serie(
         7,
