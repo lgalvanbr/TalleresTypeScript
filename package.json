@@ -1,0 +1,20 @@
+{
+  "name": "talleres-typescript",
+  "version": "1.0.0",
+  "description": "Taller de TypeScript - Desarrollo de Software",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "watch": "tsc --watch"
+  },
+  "keywords": ["typescript", "taller", "desarrollo"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  }
+}

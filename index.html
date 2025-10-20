@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Series de Televisión</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .series-image {
+            width: 80px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .series-description {
+            max-width: 300px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .series-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .series-link:hover {
+            text-decoration: underline;
+        }
+        .header-title {
+            color: #343a40;
+            margin-bottom: 30px;
+        }
+        .stats-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .table-row-clickable {
+            cursor: pointer;
+        }
+        .table-row-clickable:hover {
+            background-color: #e3f2fd !important;
+        }
+        .table-row-selected {
+            background-color: #bbdefb !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center header-title">Gestor de Series de Televisión</h1>
+                
+                <!-- Estadísticas -->
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div class="card stats-card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Total de Series</h5>
+                                <h2 id="total-series">-</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card stats-card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Promedio de Temporadas</h5>
+                                <h2 id="average-seasons">-</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tabla de Series y Detalle -->
+                <div class="row">
+                    <!-- Tabla de Series (lado izquierdo) -->
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="mb-0">Listado de Series</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-hover">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Imagen</th>
+                                                <th scope="col">Nombre</th>
+                                                <th scope="col">Canal</th>
+                                                <th scope="col">Temporadas</th>
+                                                <th scope="col">Descripción</th>
+                                                <th scope="col">Enlace</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="series-table-body">
+                                            <!-- Las filas se generarán dinámicamente con JavaScript -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Detalle de Serie (lado derecho) -->
+                    <div class="col-md-4">
+                        <div id="series-detail" class="card" style="display: none;">
+                            <div class="card-header">
+                                <h4 class="mb-0">Detalle de Serie</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="text-center mb-3">
+                                    <img id="detail-image" src="" alt="" class="img-fluid" style="max-height: 200px; border-radius: 8px;">
+                                </div>
+                                <h5 id="detail-name" class="card-title"></h5>
+                                <p id="detail-description" class="card-text"></p>
+                                <ul class="list-unstyled">
+                                    <li><strong>Canal:</strong> <span id="detail-channel"></span></li>
+                                    <li><strong>Temporadas:</strong> <span id="detail-seasons"></span></li>
+                                </ul>
+                                <a id="detail-link" href="#" target="_blank" class="btn btn-primary">Ver más información</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Información adicional -->
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <div class="alert alert-info">
+                            <h5>Información del Proyecto</h5>
+                            <p><strong>Desarrollado con:</strong> TypeScript, Bootstrap 4, HTML5</p>
+                            <p><strong>Funcionalidades:</strong> Gestión de series, visualización en tabla responsiva, estadísticas</p>
+                            <p><strong>Fecha:</strong> <span id="current-date"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Script de la aplicación -->
+    <script src="series-app.js"></script>
+</body>
+</html>
