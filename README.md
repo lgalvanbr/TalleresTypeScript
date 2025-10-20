@@ -107,7 +107,3 @@ npm run dev     # Ejecutar ejercicios con ts-node
 npm run build   # Compilar TypeScript a JavaScript
 npm test        # Ejecutar pruebas (si las hay)
 ```
-
-## 👨‍💻 Autor
-
-Desarrollado como material educativo para el aprendizaje de TypeScript y desarrollo web.

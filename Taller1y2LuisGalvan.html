@@ -14,10 +14,16 @@
             border-radius: 5px;
         }
         .series-description {
-            max-width: 300px;
+            max-width: 200px;
             overflow: hidden;
             text-overflow: ellipsis;
-            white-space: nowrap;
+            white-space: normal;
+            word-wrap: break-word;
+            line-height: 1.4;
+            max-height: 4.2em; /* Aproximadamente 3 líneas */
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
         }
         .series-link {
             color: #007bff;
@@ -133,6 +139,7 @@
                             <h5>Información del Proyecto</h5>
                             <p><strong>Desarrollado con:</strong> TypeScript, Bootstrap 4, HTML5</p>
                             <p><strong>Funcionalidades:</strong> Gestión de series, visualización en tabla responsiva, estadísticas</p>
+                            <p><strong>Creado por:</strong> Luis Carlos Galvan</p>
                             <p><strong>Fecha:</strong> <span id="current-date"></span></p>
                         </div>
                     </div>
