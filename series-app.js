@@ -35,7 +35,7 @@ const seriesData = [
         "Breaking Bad",
         "AMC",
         5,
-        "A high school chemistry teacher turned methamphetamine producer",
+        "Un profesor de química de secundaria que se convierte en productor de metanfetaminas",
         "https://www.imdb.com/title/tt0903747/",
         "https://image.tmdb.org/t/p/w500/ggFHVNu6YYI5L9pCfOacjizRGt.jpg"
     ),
@@ -44,7 +44,7 @@ const seriesData = [
         "Orange is the New Black", 
         "Netflix",
         6,
-        "The story of Piper Chapman and her time in a women's federal prison",
+        "La historia de Piper Chapman y su tiempo en una prisión federal femenina",
         "https://www.imdb.com/title/tt2372162/",
         "https://image.tmdb.org/t/p/w500/ekaa7YjGPTkFLcPhwWXTnARuCEU.jpg"
     ),
@@ -53,7 +53,7 @@ const seriesData = [
         "Game of Thrones",
         "HBO", 
         7,
-        "Nine noble families fight for control over the mythical lands of Westeros",
+        "Nueve familias nobles luchan por el control de las tierras míticas de Westeros",
         "https://www.imdb.com/title/tt0944947/",
         "https://image.tmdb.org/t/p/w500/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg"
     ),
@@ -62,7 +62,7 @@ const seriesData = [
         "The Big Bang Theory",
         "CBS",
         12, 
-        "A sitcom centered on two brilliant physicists, Leonard and Sheldon",
+        "Una comedia centrada en dos físicos brillantes, Leonard y Sheldon",
         "https://www.imdb.com/title/tt0898266/",
         "https://image.tmdb.org/t/p/w500/ooBGRQBdbGzBxAVfExiO8r7kloA.jpg"
     ),
@@ -71,7 +71,7 @@ const seriesData = [
         "Sherlock",
         "BBC",
         4,
-        "A modern update finds the famous sleuth and his doctor partner solving crime",
+        "Una versión moderna del famoso detective y su compañero doctor resolviendo crímenes",
         "https://www.imdb.com/title/tt1475582/",
         "https://image.tmdb.org/t/p/w500/7WTsnHkbA0FaG6R9twfFde0I9hl.jpg"
     ),
@@ -80,9 +80,18 @@ const seriesData = [
         "A Very English Scandal",
         "BBC",
         2,
-        "A three-part story of the historic 1960s and 1970s Liberal Party political scandal",
-        "https://www.imdb.com/title/tt7846844/",
-        "https://image.tmdb.org/t/p/w500/9QSiAmozKjH3LVcT8fdrqTqgn8w.jpg"
+        "Una historia en tres partes del histórico escándalo político del Partido Liberal de los años 60 y 70",
+        "https://www.imdb.com/es/title/tt6938856/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_a%2520very%2520english",
+        "src/series/A_Very_English_Scandal.png"
+    ),
+    new Serie(
+        7,
+        "The Boys",
+        "Amazon Prime Video",
+        4,
+        "Un grupo de vigilantes lucha contra superhéroes corruptos que abusan de sus superpoderes",
+        "https://www.imdb.com/title/tt1190634/",
+        "https://m.media-amazon.com/images/M/MV5BOTEyNDJhMDAtY2U5ZS00OTMzLTkwODktMjU3MjFkZWVlMGYyXkEyXkFqcGdeQXVyMjkwOTAyMDU@._V1_.jpg"
     )
 ];
 
@@ -165,7 +174,7 @@ class SeriesApp {
         // Celda con texto del promedio que ocupa las últimas 3 columnas
         const averageCell = document.createElement('td');
         averageCell.colSpan = 3;
-        averageCell.textContent = `Seasons average: ${getAverageSeasons().toFixed(0)}`;
+        averageCell.textContent = `Promedio de temporadas: ${getAverageSeasons().toFixed(0)}`;
         averageCell.style.textAlign = 'center';
         averageRow.appendChild(averageCell);
         

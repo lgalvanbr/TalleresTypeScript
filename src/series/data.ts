@@ -1,97 +1,93 @@
 /**
  * Archivo de datos con series de televisión
- * Basado en: https://gist.githubusercontent.com/josejbocanegra/de7431ea04351128053335c868c9698c/raw/add0c3cad73b7f913de44ee02b9ca7ebd1ebea23/series.ts
  */
 
 import { Serie } from './Serie';
 
 export const series = [
-    new Serie(
-        1,
-        "Breaking Bad",
-        "AMC",
-        5,
-        "Set and filmed in Albuquerque, New Mexico, the series tells the story of Walter White, a struggling and depressed high school chemistry teacher who is diagnosed with lung cancer",
-        "https://www.amc.com/shows/breaking-bad",
-        "https://i.imgur.com/GGje0vc.jpg"
-    ),
-    
-    new Serie(
-        2,
-        "Orange Is the New Black",
-        "Netflix",
-        6,
-        "The series begins revolving around Piper Chapman, a woman in her thirties living in New York City who is sentenced to 15 months in Litchfield Penitentiary",
-        "https://www.netflix.com/co/title/70242311",
-        "https://i.imgur.com/EvKe48G.jpg"
-    ),
+  new Serie(
+    1,
+    "Breaking Bad",
+    "AMC",
+    5,
+    "Ambientada y filmada en Albuquerque, Nuevo México, la serie cuenta la historia de Walter White, un profesor de química de secundaria en apuros y deprimido que es diagnosticado con cáncer de pulmón",
+    "https://www.amc.com/shows/breaking-bad",
+    // IMDb (Amazon CDN)
+    "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwZi00ZjQ5LWFmNTEtODM1ZTNmNTBmZWRlXkEyXkFqcGc@._V1_.jpg"
+  ),
 
-    new Serie(
-        3,
-        "Game of Thrones",
-        "HBO",
-        7,
-        "American fantasy drama television series created by David Benioff and D. B. Weiss. It is an adaptation of A Song of Ice and Fire, George R. R. Martin's series of fantasy novels",
-        "https://www.hbo.com/game-of-thrones",
-        "https://i.imgur.com/TDCEV1S.jpg"
-    ),
+  new Serie(
+    2,
+    "Orange Is the New Black",
+    "Netflix",
+    6,
+    "La serie gira en torno a Piper Chapman, una mujer de treinta y tantos años que vive en Nueva York y es sentenciada a 15 meses en la Penitenciaría de Litchfield",
+    "https://www.netflix.com/co/title/70242311",
+    "https://m.media-amazon.com/images/M/MV5BMjE1MTE2MDEzMV5BMl5BanBnXkFtZTgwNjQ5MzE2MjE@._V1_.jpg"
+  ),
 
-    new Serie(
-        4,
-        "The Big Bang Theory",
-        "CBS",
-        12,
-        "Leonard and Sheldon are brilliant physicists—geniuses in the laboratory but socially challenged everywhere else. Enter beautiful, street-smart neighbor Penny, who aims to teach them a thing or two about life. Despite their on-again, off-again relationship in the past, Leonard and Penny have finally gotten married. Even Sheldon has found a female companion, entering into a relationship agreement with neurobiologist Amy Farrah Fowler, and he recently took their relationship to the next level by marrying her after a long courtship. In their free time, Leonard and Sheldon enjoy fantasy role-playing games with their ever-expanding universe of friends, including fellow scientists Koothrappali, Wolowitz, and Wolowitz's adorable microbiologist wife, Bernadette, who is adjusting to life with their two children.",
-        "https://www.cbs.com/shows/big_bang_theory/about/",
-        "https://i.imgur.com/uAEpVWk.jpg"
-    ),
+  new Serie(
+    3,
+    "Game of Thrones",
+    "HBO",
+    7,
+    "Serie de televisión de drama fantástico estadounidense creada por David Benioff y D. B. Weiss. Es una adaptación de Canción de hielo y fuego, la serie de novelas de fantasía de George R. R. Martin",
+    "https://www.hbo.com/game-of-thrones",
+    "https://m.media-amazon.com/images/M/MV5BMTczNjc2NTk0NV5BMl5BanBnXkFtZTgwNzU1NzE3NzE@._V1_.jpg"
+  ),
 
-    new Serie(
-        5,
-        "Sherlock",
-        "BBC",
-        4,
-        "Sherlock depicts consulting detective Sherlock Holmes (Benedict Cumberbatch) solving various mysteries in modern-day London. Holmes is assisted by his flatmate and friend, Dr John Watson (Martin Freeman), who has returned from military service in Afghanistan with the Royal Army Medical Corps",
-        "https://www.bbc.co.uk/programmes/b018ttws",
-        "https://i.imgur.com/02B7qhj.jpg"
-    ),
+  new Serie(
+    4,
+    "The Big Bang Theory",
+    "CBS",
+    12,
+    "Leonard y Sheldon son físicos brillantes, genios en el laboratorio pero socialmente torpes en todos los demás aspectos...",
+    "https://www.cbs.com/shows/big_bang_theory/about/",
+    "https://m.media-amazon.com/images/M/MV5BMTc4NjYxMzI3MF5BMl5BanBnXkFtZTgwNjYwOTk2MjE@._V1_.jpg"
+  ),
 
-    new Serie(
-        6,
-        "A Very English Scandal",
-        "BBC",
-        2,
-        "A Very English Scandal is a fact-based three-part British television comedy-drama miniseries based on John Preston's book of the same name.",
-        "https://www.bbc.co.uk/programmes/p065smy4",
-        "https://i.imgur.com/D4y3DrQ.jpg"
-    )
+  new Serie(
+    5,
+    "Sherlock",
+    "BBC",
+    4,
+    "Sherlock retrata al detective consultor Sherlock Holmes (Benedict Cumberbatch) resolviendo varios misterios en el Londres moderno...",
+    "https://www.bbc.co.uk/programmes/b018ttws",
+    "https://m.media-amazon.com/images/M/MV5BMjE5NDEyNzEwOV5BMl5BanBnXkFtZTgwNDI2NTQxMDE@._V1_.jpg"
+  ),
+
+  new Serie(
+    6,
+    "A Very English Scandal",
+    "BBC",
+    2,
+    "Una miniserie británica de comedia-drama basada en hechos reales, en tres partes, basada en el libro del mismo nombre de John Preston.",
+    "https://www.imdb.com/es/title/tt6938856/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_a%2520very%2520english",
+    "src/series/A_Very_English_Scandal.png"
+  ),
+
+  new Serie(
+    7,
+    "The Boys",
+    "Amazon Prime Video",
+    4,
+    "Un grupo de vigilantes lucha contra superhéroes corruptos que abusan de sus superpoderes para beneficio personal y corporativo",
+    "https://www.imdb.com/title/tt1190634/",
+    "https://m.media-amazon.com/images/M/MV5BOTEyNDJhMDAtY2U5ZS00OTMzLTkwODktMjU3MjFkZWVlMGYyXkEyXkFqcGdeQXVyMjkwOTAyMDU@._V1_.jpg"
+  )
 ];
 
 /**
- * Función para obtener todas las series
+ * Utilidades de acceso
  */
-export function getAllSeries(): Serie[] {
-    return series;
-}
-
-/**
- * Función para obtener una serie por ID
- */
+export function getAllSeries(): Serie[] { return series; }
 export function getSerieById(id: number): Serie | undefined {
-    return series.find(serie => serie.getId() === id);
+  return series.find(serie => serie.getId() === id);
 }
-
-/**
- * Función para obtener series por canal
- */
 export function getSeriesByChannel(channel: string): Serie[] {
-    return series.filter(serie => serie.getChannel().toLowerCase() === channel.toLowerCase());
+  return series.filter(serie => serie.getChannel().toLowerCase() === channel.toLowerCase());
 }
-
-/**
- * Función para calcular el promedio de temporadas
- */
 export function getAverageSeasons(): number {
-    const totalSeasons = series.reduce((total, serie) => total + serie.getSeasons(), 0);
-    return totalSeasons / series.length;
+  const totalSeasons = series.reduce((total, serie) => total + serie.getSeasons(), 0);
+  return totalSeasons / series.length;
 }
